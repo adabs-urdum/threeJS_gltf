@@ -1,0 +1,8 @@
+rem-font-size(value)
+  font-size "calc(%s / %s * 1rem)" % (value BaseRemSize)
+
+bs-font-size(value)
+  font-size 'calc(1rem + %s * %s - %spx)' % (BS value BaseRemSize)
+
+bs-font-size-max(value)
+  font-size 'calc(1rem + %spx - %spx)' % (value BaseRemSize)
